@@ -1,0 +1,176 @@
+{
+  // ─── Workbench ────────────────────────────────────────────────────────────
+  "workbench.startupEditor": "none",
+  "workbench.iconTheme": "material-icon-theme",
+
+  // ─── Editor ───────────────────────────────────────────────────────────────
+  "editor.fontFamily": "JetBrains Mono, Menlo, Monaco, Consolas, monospace",
+  "editor.fontSize": 14,
+  "editor.lineHeight": 20,
+  "editor.wordWrap": "on",
+  "editor.minimap.enabled": false,
+
+  // ─── Terminal ─────────────────────────────────────────────────────────────
+  "terminal.integrated.defaultProfile.osx": "zsh",
+  "terminal.integrated.fontFamily": "JetBrains Mono, Menlo, Monaco, Consolas, monospace",
+  "terminal.integrated.fontSize": 13,
+
+  // ─── Chat ─────────────────────────────────────────────────────────────────
+  "chat.editor.fontFamily": "Inter, -apple-system, BlinkMacSystemFont, sans-serif",
+  "chat.editor.fontSize": 14,
+  "chat.viewSessions.orientation": "stacked",
+
+  // ─── Files ────────────────────────────────────────────────────────────────
+  "files.autoSave": "afterDelay",
+  "files.trimTrailingWhitespace": true,
+  "files.insertFinalNewline": true,
+
+  // ─── Explorer ─────────────────────────────────────────────────────────────
+  "explorer.confirmDelete": false,
+
+  // ─── Git ──────────────────────────────────────────────────────────────────
+  "git.confirmSync": false,
+
+  // ─── Python ───────────────────────────────────────────────────────────────
+  "python.testing.pytestEnabled": true,
+  "python.testing.pytestArgs": ["tests"],
+
+  // ─── Jupyter ──────────────────────────────────────────────────────────────
+  "jupyter.askForKernelRestart": false,
+  "jupyter.notebookFileRoot": "${workspaceFolder}",
+  "jupyter.interactiveWindow.mode": "perFile",
+  "jupyter.enableScrollingForCellOutputs": true,
+
+  // ─── Extensions ───────────────────────────────────────────────────────────
+  "oaicopilot.baseUrl": "https://modelstudio.dct.gov.ae",
+  "explorer.confirmDragAndDrop": false,
+  "workbench.settings.applyToAllProfiles": [
+
+
+  ],
+  "oaicopilot.models": [
+    {
+      "id": "__provider__CG",
+      "owned_by": "CG",
+      "baseUrl": "https://openai.generative.engine.capgemini.com/v1",
+      "apiMode": "openai"
+    },
+    {
+      "id": "openai.gpt-5.2",
+      "owned_by": "CG",
+      "displayName": "GPT 5.2",
+      "baseUrl": "https://openai.generative.engine.capgemini.com/v1",
+      "context_length": 400000,
+      "vision": true,
+      "apiMode": "openai",
+      "temperature": 0,
+      "max_completion_tokens": 128000
+    },
+    {
+      "id": "gemini-2.5-flash",
+      "owned_by": "CG",
+      "displayName": "Gemini Flash 2.5",
+      "baseUrl": "https://openai.generative.engine.capgemini.com/v1",
+      "context_length": 1048576,
+      "vision": true,
+      "apiMode": "openai",
+      "temperature": 0,
+      "max_completion_tokens": 65536
+    },
+    {
+      "id": "gemini-2.5-pro",
+      "owned_by": "CG",
+      "displayName": "Gemini 2.5pro",
+      "baseUrl": "https://openai.generative.engine.capgemini.com/v1",
+      "context_length": 1048576,
+      "vision": true,
+      "apiMode": "openai",
+      "temperature": 0,
+      "max_completion_tokens": 65532
+    },
+    {
+      "id": "anthropic.claude-opus-4-6-v1",
+      "owned_by": "CG",
+      "displayName": "Opus 4.6",
+      "baseUrl": "https://openai.generative.engine.capgemini.com/v1",
+      "context_length": 200000,
+      "vision": true,
+      "apiMode": "openai",
+      "temperature": 0,
+      "max_completion_tokens": 128000
+    },
+    {
+      "id": "anthropic.claude-sonnet-4-6",
+      "owned_by": "CG",
+      "displayName": "Sonnet 4.6",
+      "baseUrl": "https://openai.generative.engine.capgemini.com/v1",
+      "context_length": 1000000,
+      "vision": true,
+      "apiMode": "openai",
+      "temperature": 0,
+      "max_completion_tokens": 64000
+    },
+    {
+      "id": "__provider__DCT",
+      "owned_by": "DCT",
+      "baseUrl": "https://modelstudio.dct.gov.ae",
+      "apiMode": "openai"
+    },
+    {
+      "id": "gpt-5.1",
+      "owned_by": "DCT",
+      "displayName": "GPT 5.1",
+      "baseUrl": "https://modelstudio.dct.gov.ae",
+      "context_length": 400000,
+      "vision": true,
+      "apiMode": "openai",
+      "temperature": 0,
+      "max_completion_tokens": 128000
+    },
+    {
+      "id": "Kimi-K2.5",
+      "owned_by": "DCT",
+      "displayName": "Kimi K2.5",
+      "baseUrl": "https://modelstudio.dct.gov.ae",
+      "context_length": 256000,
+      "vision": true,
+      "apiMode": "openai",
+      "temperature": 0,
+      "max_completion_tokens": 8000
+    },
+    {
+      "id": "azure_ai/claude-sonnet-4-6",
+      "owned_by": "DCT",
+      "displayName": "DCT Sonnet 4.6",
+      "baseUrl": "https://modelstudio.dct.gov.ae",
+      "context_length": 1000000,
+      "vision": true,
+      "apiMode": "openai",
+      "temperature": 0,
+      "max_completion_tokens": 63966
+    },
+    {
+      "id": "glm-5",
+      "owned_by": "DCT",
+      "displayName": "GLM 5",
+      "baseUrl": "https://modelstudio.dct.gov.ae",
+      "context_length": 200000,
+      "vision": true,
+      "apiMode": "openai",
+      "temperature": 0,
+      "max_completion_tokens": 128000
+    },
+    {
+      "id": "anthropic.claude-opus-4-6-v1",
+      "owned_by": "CG",
+      "displayName": "Opus 4.6-thinking",
+      "configId": "thinking",
+      "baseUrl": "https://openai.generative.engine.capgemini.com/v1",
+      "context_length": 128000,
+      "max_tokens": 4096,
+      "vision": true,
+      "apiMode": "openai",
+      "temperature": 0
+    }
+  ]
+}
