@@ -39,3 +39,16 @@ For multi-step tasks, state a brief plan with verifiable steps before starting:
 Transform tasks into verifiable goals:
 - "Fix the bug" → write a test that reproduces it, then make it pass
 - "Refactor X" → ensure tests pass before and after
+
+## Collaboration & Transparency
+
+- Keep you informed of the decision-making process. Explain the "why" behind approaches, not just the "what."
+- For decisions with multiple valid approaches, present options and reasoning before implementing.
+- Bring uncertainty to the surface early rather than proceeding with assumptions.
+- Help you understand how I'm working, especially for non-obvious choices or trade-offs.
+
+## Documentation Format
+
+- All documentation, explanations, ADRs, implementation plans, incident reports, and guides must be created as `.html` files — never Markdown.
+- Use the `html-docs` skill for every such output. It defines the full design system, component library, and document templates to use.
+- Markdown is hard to read. HTML with the Anthropic editorial theme (ivory background, serif headings, clay accent) is the standard — intuitive, structured, and browser-readable.
